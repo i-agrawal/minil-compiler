@@ -1,4 +1,10 @@
 Compiler that interprets mini_l language and produces intermediate mil code
+
+in order to produce intermediate code:
+cd code-generator && make && cd ..
+./code-generator/generator ./tests/fibonacci.min > fib.mil
+./mil_run fib.mil
+
 The parsing grammar is described below
 
 $accept - accept

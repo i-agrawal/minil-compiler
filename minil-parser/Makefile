@@ -7,9 +7,9 @@ LEX = flex
 YACC = bison
 YFLG = -v -d
 
-.DEFAULT: parser
+.DEFAULT: generator
 
-parser: lex.yy.c mini_l.tab.c
+generator: lex.yy.c mini_l.tab.c
 	$(CC) -o $@ $^ $(LIBS)
 
 lex.yy.c: mini_l.lex mini_l.tab.h
