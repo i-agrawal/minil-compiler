@@ -1,0 +1,19 @@
+function notmain;
+
+beginparams
+endparams
+
+beginlocals
+    a : integer;
+    a : integer;
+    b : array[10] of integer;
+    c : array[-1] of integer;
+    continue : integer;
+endlocals
+
+beginbody
+    d := a[3] + b + fibonacci(3);
+    foreach g in a beginloop
+    endloop;
+    continue;
+endbody
